@@ -9,7 +9,6 @@ export default {
   couponLinks: computed(function () {
     return JSON.parse(settings.coupon_links);
   }),
-  name: "coupon-modal",
   
   initialize() {
     withPluginApi("0.8.31", api => {
