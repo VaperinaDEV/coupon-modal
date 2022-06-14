@@ -8,13 +8,15 @@
         <div class="coupon-contents">
           <h2>{{html-safe cl.title}}</h2>
           <p>{{html-safe cl.subtitle}}</p>
-          {{input
-            name="coupon-code"
-            class=cl.class
-            value=cl.text
-            readonly=true
-          }}
-          {{copy-button class=copyClass selector=(concat 'input.' cl.class) icon=copyIcon action=(action "copy")}}
+          <div class="coupon-code-field">
+            {{input
+              name="coupon-code"
+              class=cl.class
+              value=cl.text
+              readonly=true
+            }}
+            {{copy-button class=copyClass selector=(concat 'input.' cl.class) icon=copyIcon action=(action "copy")}}
+          </div>
         </div>
       {{/each}}
     </div>
