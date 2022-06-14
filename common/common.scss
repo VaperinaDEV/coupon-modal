@@ -4,8 +4,7 @@
 }
 
 #discourse-modal {
-  // if custom gate enabled
-  &.coupon-modal-body {
+  .coupon-modal-body {
     .modal-inner-container {
       background-color: #{$coupon_background_color};
     }
