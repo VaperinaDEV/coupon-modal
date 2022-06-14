@@ -3,70 +3,25 @@
   height: 100%;
 }
 
-#discourse-modal.gate {
+#discourse-modal {
   // if custom gate enabled
   &.custom-gate {
     .modal-inner-container {
-      background-color: #{$custom_gate_background_color};
+      background-color: #{$coupon_background_color};
     }
-    .modal-footer {
-      color: #{$custom_gate_link_color};
-      a {
-       color: #{$custom_gate_link_color};
-      }
-    }
-    .custom-gate-content {
+    .coupon-content {
       text-align: center;
       img {
-        width: #{$custom_gate_image_width};
+        width: #{$coupon_image_width};
         height: auto;
         margin-bottom: 0.75em;
       }
       h2 {
-        color: #{$custom_gate_big_text_color};
+        color: #{$coupon_big_text_color};
       }
       p {
-        color: #{$custom_gate_little_text_color};
+        color: #{$coupon_little_text_color};
       }
-    }
-  }
-  .modal-inner-container {
-    background-color: var(--secondary);
-  }
-  .modal-header {
-    border-bottom: none;
-  }
-  .modal-body {
-    padding: 0 1em;
-  }
-  .modal-footer {
-    color: var(--primary-medium);
-    justify-content: #{$gate_footer_position};
-    a {
-      color: var(--primary-medium);
-      outline: none;
-      margin: 0 0.25em;
-    }
-  }
-  #login-buttons {
-    margin-bottom: 0.75em;
-    text-align: center;
-    .btn-social {
-      margin: 0.25em;
-      .mobile-view & {
-        width: 100%;
-      }
-      &:focus,
-      &:hover {
-        background: var(--secondary);
-        color: var(--primary);
-        .d-icon {
-          color: var(--primary);
-        }
-      }
-    }
-    .mobile-view & {
-      width: 100%;
     }
   }
 }
