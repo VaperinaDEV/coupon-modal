@@ -52,7 +52,11 @@ coupon_links:
         "class": {
           "type": "string",
           "minLength": 1
-        }        
+        },
+        "classs": {
+          "type": "string",
+          "minLength": 1
+        }       
       },
       "additionalProperties": false
     }
