@@ -6,11 +6,11 @@ coupon_image_width:
   type: string
   default: "150px"
   description: The uploaded image width. You can use px, % etc, e.g. 100% will add a full modal width (minus padding) image.
-coupon_big_text_color:
+coupon_secondary_title_color:
   type: string
   default: "var(--primary)"
   description: The “big text” appears below the image. You can set the color of the text.
-coupon_little_text_color:
+coupon_description_color:
   type: string
   default: "var(--primary)"
   description: The “little text” appears below the big text. You can set the color of the text.
