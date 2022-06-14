@@ -18,7 +18,7 @@ export default {
           },
 
           click() {
-            showModal("customModal");
+            showModal("couponModal");
           }
         });
       }
