@@ -1,7 +1,16 @@
 {{#d-modal-body title=(theme-prefix 'coupon.title') class="coupon-modal-body"}}
   <div class="coupon-content">
     <img src="{{theme-setting 'coupon_image'}}"/>
-    <h2>{{theme-i18n "coupon.big_text"}}</h2>
-    <p>{{theme-i18n "coupon.little_text"}}</p>
+    <h2>{{theme-i18n "coupon.secondary_title"}}</h2>
+    <p>{{theme-i18n "coupon.description"}}</p>
+    <div class="copy-coupon-code">
+      {{input
+        name="coupon-code"
+        class="coupon-code-text"
+        value=text
+        readonly=true
+      }}
+      {{copy-button selector="input.coupon-code"}}
+    </div>
   </div>
 {{/d-modal-body}}
