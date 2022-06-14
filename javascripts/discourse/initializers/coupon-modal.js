@@ -28,7 +28,7 @@ export default {
   }
 };
 
-export default Component.extend({
+export Component.extend({
    couponLinks: computed(function () {
      return JSON.parse(settings.coupon_links);
    }),
