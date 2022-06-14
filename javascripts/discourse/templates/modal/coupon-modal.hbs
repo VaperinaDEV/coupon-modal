@@ -3,14 +3,16 @@
     <img src="{{theme-setting 'coupon_image'}}"/>
     <h2>{{theme-i18n "coupon.secondary_title"}}</h2>
     <p>{{theme-i18n "coupon.description"}}</p>
-    <div class="copy-coupon-code">
+    <div class="copy-coupon-codes">
+    {{#each couponLinks as |cl|}}
       {{input
         name="coupon-code"
         class="coupon-code"
-        value="VAPERINA"
+        value={{html-safe cl.value}}
         readonly=true
       }}
       {{copy-button selector="input.coupon-code" copied=(action "copied")}}
+    {{/each}}
     </div>
   </div>
 {{/d-modal-body}}
