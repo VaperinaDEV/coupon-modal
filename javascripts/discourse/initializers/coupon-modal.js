@@ -20,12 +20,12 @@ export default {
 
           click() {
             showModal("couponModal");
-          },
-          couponLinks: computed(function () {
-            return JSON.parse(settings.coupon_links);
-          })
+          }
         });
       }
     });
+    couponLinks: computed(function () {
+    return JSON.parse(settings.coupon_links);
+    }),
   }
 };
