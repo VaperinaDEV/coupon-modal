@@ -48,7 +48,11 @@ coupon_links:
         "text": {
           "type": "string",
           "minLength": 1
-        }
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        }        
       },
       "additionalProperties": false
     }
