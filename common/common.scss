@@ -16,10 +16,10 @@
         margin-bottom: 0.75em;
       }
       h2 {
-        color: #{$coupon_big_text_color};
+        color: #{$coupon_secondary_title_color};
       }
       p {
-        color: #{$coupon_little_text_color};
+        color: #{$coupon_description_color};
       }
     }
   }
