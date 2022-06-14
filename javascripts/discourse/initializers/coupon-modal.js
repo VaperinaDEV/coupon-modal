@@ -8,10 +8,6 @@ export default apiInitializer("0.11.1", (api) => {
 
     if (api.getCurrentUser()) {
         
-        couponLinks: computed(function () {
-          return JSON.parse(settings.coupon_links);
-        })
-        
         api.createWidget("modal-button", {
           tagName: "a.vp-link.vp-modal.btn-default.btn.no-text.btn-icon",
 
