@@ -3,7 +3,7 @@
   height: 100%;
 }
 
-#discourse-modal {
+#discourse-modal.coupon-modal-modal {
   .coupon-modal-body {
     .modal-inner-container {
       background-color: #{$coupon_background_color};
