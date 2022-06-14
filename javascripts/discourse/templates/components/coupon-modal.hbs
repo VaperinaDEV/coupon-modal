@@ -9,7 +9,7 @@
           <h2>{{html-safe cl.title}}</h2>
           <p>{{html-safe cl.subtitle}}</p>
           {{input
-            name="coupon-code"
+            name=cl.name
             class="coupon-code"
             value=cl.text
             readonly=true
