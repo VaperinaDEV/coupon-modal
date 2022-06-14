@@ -21,9 +21,4 @@ coupon_background_color:
 coupon_link_color:
   type: string
   default: "var(--primary-medium)"
-  description: Change the footer link color. This applies if the use gate buttons setting is disabled and you have set up a custom gate.
-coupon_links:
-  default: >-
-    [{"title":"JuicyVape","subtitle":"Segíts, hogy továbbra is segíthessünk!","icon":"user","text":"VAPERINA","url":"/"},
-    {"title":"Sourcemore","subtitle":"Segíts, hogy továbbra is segíthessünk!","icon":"donate","text":"VAPERINA","url":"/"}]
-  json_schema: '{ "type": "array", "format": "table", "uniqueItems": true, "items": { "type": "object", "properties": { "title": { "type": "string", "minLength": 1 }, "subtitle": { "type": "string", "minLength": 1 }, "icon": { "type": "string", "minLength": 1 }, "text": { "type": "string", "minLength": 1 }, "url": { "type": "string" } }, "additionalProperties": false } }'
+  description: Change the footer link color. This applies if the use gate buttons setting is disabled and you have set up a custom gate.  
