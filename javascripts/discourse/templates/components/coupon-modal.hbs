@@ -14,8 +14,7 @@
             value=cl.text
             readonly=true
           }}
-          {{d-button class=copyClass selector=(concat 'input.' cl.class) icon=copyIcon action=(action "copy")}}
-          
+          {{copy-button class=copyClass selector=(concat 'input.' cl.class) icon=copyIcon action=(action "copy")}}
         </div>
       {{/each}}
     </div>
