@@ -2,11 +2,13 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 import showModal from "discourse/lib/show-modal";
 import { iconNode } from "discourse-common/lib/icon-library";
 import { computed } from "@ember/object";
-import Component from "@ember/component";
 
 let icon = iconNode('ticket-alt');
 
 export default {
+  couponLinks: computed(function () {
+    return JSON.parse(settings.coupon_links);
+  }),
   name: "coupon-modal",
   
   initialize() {
@@ -27,9 +29,3 @@ export default {
     });
   }
 };
-
-export Component.extend({
-   couponLinks: computed(function () {
-     return JSON.parse(settings.coupon_links);
-   }),
-});
