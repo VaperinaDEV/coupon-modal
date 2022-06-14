@@ -27,3 +27,9 @@ coupon_links:
     [{"title":"JuicyVape","subtitle":"Segíts, hogy továbbra is segíthessünk!","value":"VAPERINA"},
     {"title":"Sourcemore","subtitle":"Segíts, hogy továbbra is segíthessünk!","value":"VAPERINA"}]
   json_schema: '{ "type": "array", "format": "table", "uniqueItems": true, "items": { "type": "object", "properties": { "title": { "type": "string", "minLength": 1 }, "subtitle": { "type": "string", "minLength": 1 }, "value": { "type": "string", "minLength": 1 }, "additionalProperties": false } }'
+banner_links:
+  default: >-
+    [{"title":"Támogatás","subtitle":"Segíts, hogy továbbra is segíthessünk!","icon":"donate","text":"Támogató leszek","url":"/t/tamogato-leszek/4454"},
+    {"title":"Kalkulátor","subtitle":"Liquid keverés egyszerűen?","icon":"flask","text":"VapeDIY","url":"https://diy.vaperina.cc"},
+    {"title":"Fedezd fel","subtitle":"Nézd meg a környékeden élő Vapereket!","icon":"compass","text":"Vaper Lokátor","url":"/u/user-map?period=location"}]
+  json_schema: '{ "type": "array", "format": "table", "uniqueItems": true, "items": { "type": "object", "properties": { "title": { "type": "string", "minLength": 1 }, "subtitle": { "type": "string", "minLength": 1 }, "icon": { "type": "string", "minLength": 1 }, "text": { "type": "string", "minLength": 1 }, "url": { "type": "string" } }, "additionalProperties": false } }'
