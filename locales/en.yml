@@ -1,5 +1,5 @@
 en:
   coupon:
     title: "Kuponok"
-    big_text: "Custom Big text"
-    little_text: "Custom Little text"
+    secondary_title: "Custom Big text"
+    description: "Custom Little text"
