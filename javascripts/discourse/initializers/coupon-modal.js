@@ -1,15 +1,12 @@
-import { withPluginApi } from "discourse/lib/plugin-api";
+import { apiInitializer } from "discourse/lib/plugin-api";
 import showModal from "discourse/lib/show-modal";
 import { iconNode } from "discourse-common/lib/icon-library";
 
 let icon = iconNode('ticket-alt');
 
-export default {
-  name: "coupon-modal",
-  
-  initialize(container) {
-    withPluginApi("0.8.31", api => {
-      if (api.getCurrentUser()) {
+export default apiInitializer("0.11.1", (api) => {
+
+    if (api.getCurrentUser()) {
         
         couponLinks: computed(function () {
           return JSON.parse(settings.coupon_links);
@@ -27,6 +24,4 @@ export default {
           }
         });
       }
-    });
-  }
-};
+});
