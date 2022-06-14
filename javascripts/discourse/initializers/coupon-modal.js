@@ -7,7 +7,7 @@ let icon = iconNode('ticket-alt');
 
 couponLinks: computed(function () {
   return JSON.parse(settings.coupon_links);
-});
+})
 
 export default {
   name: "coupon-modal",
