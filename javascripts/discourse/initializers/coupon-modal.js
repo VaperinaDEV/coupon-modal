@@ -5,12 +5,12 @@ import { computed } from "@ember/object";
 
 let icon = iconNode('ticket-alt');
 
+couponLinks: computed(function () {
+  return JSON.parse(settings.coupon_links);
+});
+
 export default {
   name: "coupon-modal",
-  
-  couponLinks: computed(function () {
-    return JSON.parse(settings.coupon_links);
-  }),
   
   initialize(container) {
     withPluginApi("0.8.31", api => {
