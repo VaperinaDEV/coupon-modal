@@ -20,9 +20,10 @@
       .copy-coupon-codes {
         display: flex;
         flex-flow: wrap;
+        justify-content: center;
         gap: 1em;
         .coupon-contents {
-          flex: auto;
+          flex: auto 0;
           padding: 1em;
           border: 3px dashed var(--tertiary);
           border-radius: 1em; 
