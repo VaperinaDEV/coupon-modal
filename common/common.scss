@@ -22,9 +22,12 @@
         color: #{$coupon_description_color};
       }
       .copy-coupon-codes {
+        display: flex;
+        flex-flow: wrap;
+        gap: 1em;
         .coupon-contents {
+          flex: auto;
           padding: 1em;
-          margin-bottom: 1em;
           border: 1px solid var(--primary-medium);
           border-radius: 1em; 
           .coupon-code-field {
