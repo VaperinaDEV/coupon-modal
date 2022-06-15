@@ -40,7 +40,11 @@ coupon_links:
         "title": {
           "type": "string",
           "minLength": 1
-        },       
+        },
+        "info": {
+          "type": "string",
+          "minLength": 1
+        },     
         "subtitle": {
           "type": "string",
           "minLength": 1
