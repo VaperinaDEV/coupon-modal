@@ -4,7 +4,7 @@ coupon_image:
   description: Upload an image to display at the top of the modal.
 coupon_image_width:
   type: string
-  default: "100%"
+  default: "300px"
   description: The uploaded image width. You can use px, % etc, e.g. 100% will add a full modal width (minus padding) image.
 coupon_secondary_title_color:
   type: string
