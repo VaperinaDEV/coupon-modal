@@ -28,7 +28,7 @@
         .coupon-contents {
           flex: auto;
           padding: 1em;
-          border: 1px solid var(--primary-medium);
+          border: 3px dashed var(--tertiary);
           border-radius: 1em; 
           .coupon-code-field {
             display: flex;
