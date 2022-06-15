@@ -2,7 +2,7 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 import showModal from "discourse/lib/show-modal";
 import { iconNode } from "discourse-common/lib/icon-library";
 
-let icon = iconNode('ticket-alt');
+let icon = iconNode('percent');
 
 export default {
   name: "coupon-modal",
