@@ -21,13 +21,14 @@
         color: #{$coupon_description_color};
       }
       .copy-coupon-codes {
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1em;
         margin-bottom: 1em;
+        @media screen and (max-width: 500px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
         .coupon-contents {
-          flex: auto 0;
           padding: 1em;
           border: 3px dashed var(--tertiary);
           border-radius: 1em; 
