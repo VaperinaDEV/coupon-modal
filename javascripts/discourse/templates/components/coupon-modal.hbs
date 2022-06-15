@@ -6,7 +6,7 @@
     <div class="copy-coupon-codes">
       {{#each couponLinks as |cl|}}
         <div class="coupon-contents">
-          <h2>{{html-safe cl.title}} <a href=cl.info>{{d-icon "info"}}</a></h2>
+          <h2>{{html-safe cl.title}} <a href={{html-safe cl.info}}>{{d-icon "info"}}</a></h2>
           <p>{{html-safe cl.subtitle}}</p>
           <div class="coupon-code-field">
             {{input
