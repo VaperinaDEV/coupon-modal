@@ -41,7 +41,7 @@ coupon_links:
           "type": "string",
           "minLength": 1
         },
-        "info": {
+        "webshop": {
           "type": "string",
           "minLength": 1
         },     
@@ -49,6 +49,10 @@ coupon_links:
           "type": "string",
           "minLength": 1
         },
+        "info": {
+          "type": "string",
+          "minLength": 1
+        },         
         "text": {
           "type": "string",
           "minLength": 1
