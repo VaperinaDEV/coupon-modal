@@ -23,12 +23,10 @@
       }
       .copy-coupon-codes {
         .coupon-contents {
-          padding-bottom: 1em;
+          padding: 1em;
           margin-bottom: 1em;
-          border-bottom: 1px solid var(--primary-low); 
-          &:last-child {
-            border-bottom: none;
-          }
+          border: 1px solid var(--primary-medium);
+          border-radius: 1em; 
           .coupon-code-field {
             display: flex;
             input[name="coupon-code"] {
