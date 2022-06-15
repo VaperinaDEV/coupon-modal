@@ -42,7 +42,7 @@ coupon_links:
           "minLength": 1
         },
         "image": {
-          "type": "upload",
+          "type": "string",
           "minLength": 1
         },        
         "subtitle": {
