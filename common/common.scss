@@ -13,6 +13,7 @@
       }
       h2 {
         color: #{$coupon_secondary_title_color};
+        outline: none !important;
       }
       p {
         color: #{$coupon_description_color};
