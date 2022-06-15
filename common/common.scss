@@ -19,6 +19,9 @@
       }
       p {
         color: #{$coupon_description_color};
+        @media screen and (max-width: 500px) {
+          max-width: 300px;
+        }
       }
       .copy-coupon-codes {
         display: grid;
