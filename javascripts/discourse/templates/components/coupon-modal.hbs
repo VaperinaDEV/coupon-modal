@@ -2,7 +2,7 @@
   <div class="coupon-content">
     <img src="{{theme-setting 'coupon_image'}}"/>
     <h2>{{theme-i18n "coupon.secondary_title"}}</h2>
-    <p>{{theme-i18n "coupon.description"}}</p>
+    <p>{{html-safe theme-i18n "coupon.description"}}</p>
     <div class="copy-coupon-codes">
       {{#each couponLinks as |cl|}}
         <div class="coupon-contents">
