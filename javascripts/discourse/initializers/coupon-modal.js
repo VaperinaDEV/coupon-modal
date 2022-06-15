@@ -11,7 +11,7 @@ export default {
     withPluginApi("0.8.31", api => {
       if (api.getCurrentUser()) {
         api.createWidget("modal-button", {
-          tagName: "a.vp-link.vp-modal.btn-default.btn.no-text.btn-icon",
+          tagName: "a.vp-link.vp-modal.btn-primary.btn.no-text.btn-icon",
 
           html() {
             return icon;
