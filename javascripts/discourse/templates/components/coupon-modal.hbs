@@ -10,7 +10,7 @@
           <p>{{html-safe cl.subtitle}} <a href={{html-safe cl.info}}>{{d-icon "info-circle"}}</a></p>
           <div class="coupon-code-field">
             <Input @name="coupon-code" @class={{cl.class}} @value={{cl.text}} @readonly={{true}} />
-            <CopyButton @class=copyClass selector=(concat "input." cl.class) @icon={{"copyIcon"}} @action={{action "copy"}} />
+            <CopyButton @class=copyClass selector=(concat 'input.' cl.class) @icon={{"copyIcon"}} @action={{action "copy"}} />
           </div>
         </div>
       {{/each}}
