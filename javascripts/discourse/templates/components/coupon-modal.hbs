@@ -15,7 +15,7 @@
               value=cl.text
               readonly=true
             }}
-            <CopyButton @class=copyClass selector={{concat "input." cl.class}} @icon={{"copyIcon"}} @action={{action "copy"}} />
+            <CopyButton @class={{copyClass selector=(concat "input." cl.class)}} @icon={{"copyIcon"}} @action={{action "copy"}} />
           </div>
         </div>
       {{/each}}
